@@ -1,0 +1,16 @@
+variant,model,metric,cohorts,n_above,claim_both_cohorts
+T32,LR,global_spearman_mean,2,0,False
+T32,LR,global_top5_jaccard_mean,2,0,False
+T32,LR,local_sign_all_median,2,0,False
+T32,LR,local_spearman_median,2,1,False
+T32,LR,local_top3_jaccard_median,2,1,False
+T32,RF,global_spearman_mean,2,1,False
+T32,RF,global_top5_jaccard_mean,2,0,False
+T32,RF,local_sign_all_median,2,0,False
+T32,RF,local_spearman_median,2,1,False
+T32,RF,local_top3_jaccard_median,2,1,False
+T32,XGB,global_spearman_mean,2,0,False
+T32,XGB,global_top5_jaccard_mean,2,0,False
+T32,XGB,local_sign_all_median,2,0,False
+T32,XGB,local_spearman_median,2,1,False
+T32,XGB,local_top3_jaccard_median,2,1,False

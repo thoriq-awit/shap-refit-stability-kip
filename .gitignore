@@ -1,0 +1,9 @@
+# Raw applicant data must never be committed
+*.xlsx
+*.xls
+data/
+raw/
+*_raw.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,17 @@
+{
+  "protocol": "A01 v1.3",
+  "frozen_utc": "2026-10-21T01:04:39Z",
+  "frozen_by": "disusun AI atas delegasi peneliti (chat 2026-10-21); belum ada hasil v1.3 saat dibekukan",
+  "script": "A01_shap_stability_v1_3.py",
+  "script_sha256": "9ecab5bdd24f710d81dfdffa5cb79bf7ed4a5946dac2a840361b644279cbd5e1",
+  "check_script": "A01_v13_cek.py",
+  "check_script_sha256": "3c5ca433d7b49d1db5c3f069446bcfd820942d1896d77e9819b5e6a8fe4cdb04",
+  "parent_script": "A01_shap_stability_v1_2.py",
+  "parent_sha256": "2f273800c2ec0eb36c4174aa062655dc2df87e644e7e7db890cb401fa1bd4d27",
+  "status": "post hoc terhadap hasil v1.2 yang sudah dilihat peneliti; analisis tambahan",
+  "settings": {"null_P": 20, "null_R": 25, "null_configs": "LR/boot,RF/boot,XGB/boot", "split_seeds": [101, 102, 103, 104, 105], "split_R": 30,
+               "rsweep_R": 200, "rsweep_prefix": [25, 50, 100, 200], "rsweep_block": 50, "SEED": 20261018, "TEST_FRAC": 0.30},
+  "stages_priority": ["N1 null T32", "S1 split-seed T32", "R1 rsweep T32", "N2/R2 null dan rsweep E_blok_rumah"],
+  "decision_rules": ["R-N1", "R-N2", "R-N3", "R-S1", "R-R1", "R-R2 (lihat A01_v1_3_PROTOKOL.md bagian 4)"],
+  "holdout_2025": "tidak dibaca"
+}

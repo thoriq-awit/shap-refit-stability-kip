@@ -1,0 +1,22 @@
+{
+  "protocol": "A01 v1.2",
+  "frozen_utc": "2026-10-19T06:59:02Z",
+  "frozen_by": "disusun AI atas delegasi peneliti (chat 2026-10-19); belum ada hasil v1.2 saat dibekukan",
+  "script": "A01_shap_stability_v1_2.py",
+  "script_sha256": "2f273800c2ec0eb36c4174aa062655dc2df87e644e7e7db890cb401fa1bd4d27",
+  "compare_script": "A01_v12_cek_reproduksi.py",
+  "compare_script_sha256": "ed2dc71aff6e6b0327ac7993d9f6fdc3c6304e5209a5312f012d69db0164e7f1",
+  "parent_script": "A01_shap_stability_v1_1.py",
+  "parent_sha256": "20170e391ea2e68a4a50be9778cad912adcf304d9442afd1900532e34e743024",
+  "status_selftest": "lolos (data sintetis; 50 konfigurasi; bukan temuan)",
+  "variants_primary": "T32",
+  "variant_ladder": "T32 < E_blok_rumah < C_tanpa_kabkota < primary; B_tanpa_blok warisan v1.0",
+  "settings": {"R": 100, "TEST_FRAC": 0.30, "SEED": 20261018, "TOPK_GLOBAL": 5, "TOPK_LOCAL": 3, "NEAR_FRAC": 0.20, "SIGN_EPS": 1e-10},
+  "pre_run_decisions": [
+    "Analisis utama = T32 (variabel tanpa syarat di Tabel 3.2 proposal). Varian lain = tangga sensitivitas, semuanya dilaporkan penuh.",
+    "Keputusan ini diambil setelah hasil v1.0 diketahui peneliti: statusnya post hoc dan wajib diungkap di Methods.",
+    "Local sign consistency dilaporkan dengan dua perlakuan nol (all, nz); tidak ada yang dipilih berdasarkan hasil.",
+    "Strata dekat batas = 20% instans terdekat ke ambang F1-maksimum pada rata-rata probabilitas refit; hanya untuk strata, bukan klaim kinerja.",
+    "Holdout 2025 tidak dibaca oleh skrip."
+  ]
+}

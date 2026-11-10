@@ -1,0 +1,20 @@
+{
+  "protocol": "A01 v1.4",
+  "frozen_utc": "2026-10-31T01:43:06Z",
+  "frozen_by": "disusun AI atas delegasi peneliti (chat 2026-10-31); belum ada hasil v1.4 saat dibekukan",
+  "script": "A01_posctl_v1_4.py",
+  "script_sha256": "dbe5561818fee01cc7fc3804e0d02bef534a09837e690ebdaef08aa6c4c800ee",
+  "rules_script": "A01_v14_aturan.py",
+  "rules_script_sha256": "4435dccf336b284fbc22588bfdb6e7807d975febe260c997e8c270ab92078c98",
+  "test_script": "uji_v14.py",
+  "test_script_sha256": "8cf3a8d3c9af88e30c5c1e577393b6e29d52c362f022c262631462cbdaaf3b38",
+  "base_script": "A01_shap_stability_v1_3.py",
+  "base_sha256": "9ecab5bdd24f710d81dfdffa5cb79bf7ed4a5946dac2a840361b644279cbd5e1",
+  "status": "post hoc terhadap hasil v1.3 tahap T32 yang sudah dilihat peneliti; analisis tambahan",
+  "settings": {"posctl_levels": [0.58, 0.70, 0.85], "null_P": 20, "null_R": 25, "configs": "LR/boot,RF/boot,XGB/boot", "k_true": 3,
+               "nullx_from": 20, "nullx_to": 100, "SEED": 20261018, "TEST_FRAC": 0.30,
+               "pc_thresholds": {"frac_sens": 0.8, "frac_mono": "2/3", "mono_tol": 0.02, "rec_min": "2/3"}, "nx_alpha": 0.05, "bh_q": 0.10},
+  "stages_priority": ["PC kontrol positif T32", "N2/R2 E_blok_rumah (perintah v1.3)", "NX perluasan null T32"],
+  "decision_rules": ["PC-1", "PC-2", "PC-3", "PC-4", "PC-5", "NX-1", "aturan v1.3 tetap berlaku untuk N2/R2 (lihat A01_v1_4_PROTOKOL.md bagian 4)"],
+  "holdout_2025": "tidak dibaca"
+}

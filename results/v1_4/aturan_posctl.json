@@ -1,0 +1,52 @@
+{
+  "levels": [
+    0.58,
+    0.7,
+    0.85
+  ],
+  "cells": [
+    "2023|LR",
+    "2023|RF",
+    "2023|XGB",
+    "2024|LR",
+    "2024|RF",
+    "2024|XGB"
+  ],
+  "PC-1": {
+    "level": 0.85,
+    "need": 5,
+    "detail": {
+      "global_spearman_mean": {
+        "above": 5,
+        "cells": 6
+      },
+      "local_spearman_median": {
+        "above": 6,
+        "cells": 6
+      }
+    },
+    "sensitive": true
+  },
+  "PC-2": {
+    "need": 4,
+    "detail": {
+      "global_spearman_mean": {
+        "monotone": 6,
+        "cells": 6
+      },
+      "local_spearman_median": {
+        "monotone": 6,
+        "cells": 6
+      }
+    },
+    "dose_response": true
+  },
+  "PC-3": {
+    "level": 0.85,
+    "above": 5,
+    "cells": 6,
+    "need": 5,
+    "mean_observed": 0.7644444444444445,
+    "recovers": true
+  }
+}
