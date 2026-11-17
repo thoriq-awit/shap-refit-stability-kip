@@ -1,0 +1,41 @@
+{
+  "protocol": "A01 v1.5 (pembanding UCI)",
+  "frozen_utc": "2026-11-17T00:04:57Z",
+  "frozen_by": "disusun AI atas delegasi peneliti (chat 2026-11-17); belum ada model yang dilatih pada data UCI saat dibekukan",
+  "script": "A01_uci_v1_5.py",
+  "script_sha256": "a1ffb8c84340e711a9a20666f61ce30120e90be4941502be08d113427bb90e10",
+  "rules_script": "A01_v15_aturan.py",
+  "rules_script_sha256": "ee4937d4b4be1b3e11cbd0eb03c38131952cd446bd42424a26a2dd82790c7b14",
+  "base_script": "A01_shap_stability_v1_3.py",
+  "base_sha256": "9ecab5bdd24f710d81dfdffa5cb79bf7ed4a5946dac2a840361b644279cbd5e1",
+  "protocol_doc": "A01_v1_5_PROTOKOL.md",
+  "protocol_doc_sha256": "084783eeb587875a5fa49ce095428d2ce7bfce1d9c43055e50fdf523ebd70734",
+  "data": "UCI Predict Students' Dropout and Academic Success, data.csv",
+  "data_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+  "status": "post hoc terhadap seluruh hasil KIP v1.2-v1.4; pra-hasil terhadap data UCI",
+  "seen_before_freeze": "ukuran data, kolom, distribusi label, jumlah kategori, statistik ringkas usia dan nilai masuk, tabel silang Scholarship holder x Target",
+  "settings": {
+    "label": "Dropout=1, Graduate=0, Enrolled dikeluarkan",
+    "n": 3630,
+    "n_groups": 17,
+    "sub_n": 800,
+    "subsamples": 5,
+    "sub_tag": 1505,
+    "R": 100,
+    "null_P_sub": 100,
+    "null_P_full": 20,
+    "null_R": 25,
+    "SEED": 20261018,
+    "TEST_FRAC": 0.3
+  },
+  "decision_rules": {
+    "U1": "AUC di atas null >= 12/15 sel dan median AUC >= 0.70",
+    "U2": "GS dan LS masing-masing di atas null >= 12/15 sel",
+    "U3": "J5, J3, SC deskriptif",
+    "U4": "UCI_full > maksimum 20 null; selisih full vs subsampel deskriptif",
+    "U5": "seed vs bootstrap deskriptif",
+    "secondary": "BH q <= 0.10 atas 75 sel",
+    "alpha": 0.05
+  },
+  "holdout_2025": "tidak dibaca"
+}

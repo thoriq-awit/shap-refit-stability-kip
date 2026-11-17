@@ -12,7 +12,12 @@ Analysis scripts, frozen protocol files, and aggregate results for the manuscrip
 | `protocol/` | Protocol documents v1.3 and v1.4 and the run guides (in Indonesian) |
 | `results/v1_2/` | Stability summary for all feature variants, bootstrap and seed schemes, R = 100 |
 | `results/v1_3/` | Split-seed study, sweep over R, 20-permutation null classification, variant ladder against split-seed range |
+| `results/v1_5/` | (filled after the run) Comparator analysis on the public UCI dataset "Predict Students' Dropout and Academic Success"; protocol v1.5 was frozen before any model was fitted on it |
 | `results/v1_4/` | 100-permutation null (Table 2 of the manuscript), positive-control detection per level (Table 3), housing/utility variant |
+
+## Public comparator data (v1.5)
+
+The v1.5 comparator uses the UCI dataset "Predict Students' Dropout and Academic Success" (CC BY 4.0). Please cite M. V. Martins, D. Tolledo, J. Machado, L. M. T. Baptista, and V. Realinho (2021), doi: 10.1007/978-3-030-72657-7_16, and V. Realinho, J. Machado, L. Baptista, and M. V. Martins (2022), *Data* 7(11), 146. The file is not redistributed here; its SHA-256 is recorded in `freeze/A01_v1_5_FREEZE.json`.
 
 ## What is not here
 
