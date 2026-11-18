@@ -1,0 +1,108 @@
+{
+  "frozen": "2026-11-17, sebelum model dilatih pada data UCI",
+  "alpha": 0.05,
+  "min_cells": 12,
+  "auc_median_min": 0.7,
+  "n_cells_sub": 15,
+  "U1": {
+    "auc_above_null": 15,
+    "auc_observed_median": 0.73440687846109,
+    "auc_observed_min": 0.6714718740891868,
+    "auc_observed_max": 0.78482658117167,
+    "auc_null_mean_range": [
+      0.4825473622850481,
+      0.5129631011366949
+    ],
+    "signal_strong": true
+  },
+  "U2": {
+    "GS_above": 13,
+    "LS_above": 14,
+    "protocol_detects": true
+  },
+  "U3": {
+    "J5": 8,
+    "J3": 15,
+    "SC": 12
+  },
+  "BH_secondary": {
+    "GS": 13,
+    "J5": 10,
+    "LS": 15,
+    "J3": 15,
+    "SC": 14
+  },
+  "U4_full_above_null": {
+    "GS": 0,
+    "J5": 0,
+    "LS": 0,
+    "J3": 0,
+    "SC": 0,
+    "AUC": 0
+  },
+  "U4_full_P": 0,
+  "U4_full_minus_sub": [
+    {
+      "model": "LR",
+      "source": "boot",
+      "GS_full_minus_sub": 0.13732154882154868,
+      "LS_full_minus_sub": 0.09773673004555372
+    },
+    {
+      "model": "RF",
+      "source": "boot",
+      "GS_full_minus_sub": 0.06754367201426026,
+      "LS_full_minus_sub": 0.10208506634977232
+    },
+    {
+      "model": "RF",
+      "source": "seed",
+      "GS_full_minus_sub": 0.001108833432362899,
+      "LS_full_minus_sub": 0.012683650227767962
+    },
+    {
+      "model": "XGB",
+      "source": "boot",
+      "GS_full_minus_sub": 0.06169610510676271,
+      "LS_full_minus_sub": 0.09492810549411357
+    },
+    {
+      "model": "XGB",
+      "source": "seed",
+      "GS_full_minus_sub": 0.006446785924252851,
+      "LS_full_minus_sub": 0.023104318521740774
+    }
+  ],
+  "U5_seed_vs_boot": [
+    {
+      "model": "LR",
+      "source": "boot",
+      "GS_mean": 0.7623848286789465,
+      "LS_mean": 0.6873509110714993
+    },
+    {
+      "model": "RF",
+      "source": "boot",
+      "GS_mean": 0.8793443256090315,
+      "LS_mean": 0.7129382055852644
+    },
+    {
+      "model": "RF",
+      "source": "seed",
+      "GS_mean": 0.9871527035056447,
+      "LS_mean": 0.94218265993266
+    },
+    {
+      "model": "XGB",
+      "source": "boot",
+      "GS_mean": 0.8851330002853073,
+      "LS_mean": 0.6984611154624286
+    },
+    {
+      "model": "XGB",
+      "source": "seed",
+      "GS_mean": 0.9822334121650638,
+      "LS_mean": 0.9031667919077784
+    }
+  ]
+}

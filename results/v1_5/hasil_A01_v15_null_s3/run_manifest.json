@@ -1,0 +1,57 @@
+{
+  "protocol": "A01 v1.5 (UCI pembanding)",
+  "mode": "null",
+  "samples": [
+    "UCI_s3"
+  ],
+  "R": 100,
+  "null_P": 100,
+  "null_R": 25,
+  "selftest": false,
+  "script_sha256": "a1ffb8c84340e711a9a20666f61ce30120e90be4941502be08d113427bb90e10",
+  "base_sha256": "9ecab5bdd24f710d81dfdffa5cb79bf7ed4a5946dac2a840361b644279cbd5e1",
+  "input_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+  "seed": 20261018,
+  "sub_n": 800,
+  "sub_tag": 1505,
+  "feat_cat": [
+    "Marital status",
+    "Application mode",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Displaced",
+    "Educational special needs",
+    "Gender"
+  ],
+  "feat_num": [
+    "Application order",
+    "Previous qualification (grade)",
+    "Admission grade",
+    "Age at enrollment"
+  ],
+  "excluded": [
+    "Debtor",
+    "Tuition fees up to date",
+    "Scholarship holder",
+    "International",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP",
+    "Curricular units (12 kolom)"
+  ],
+  "python": "3.14.2",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "shap": "0.54.1",
+    "xgboost": "3.4.1"
+  }
+}
