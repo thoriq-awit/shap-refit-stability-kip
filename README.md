@@ -49,6 +49,4 @@ Code: MIT. Aggregate result files: CC BY 4.0.
 
 `results/v1_5/` holds the aggregate outputs of the frozen v1.5 protocol on the public UCI dataset:
 `hasil_A01_v15_main_sub` and `hasil_A01_v15_main_full` (R = 100), `hasil_A01_v15_null_s1`–`s5` (P = 100), and
-`aturan_v15_sub` (frozen decision rules applied to the five subsamples). The 20-permutation null for the full dataset
-(`hasil_A01_v15_null_full`) has not been run yet; the U-4 "above null" counts in `aturan_v15_sub` are therefore zero by
-construction and mean "not run", not "not above null".
+`aturan_v15_sub` (frozen decision rules applied to the five subsamples only, run before the full-data null), `hasil_A01_v15_null_full` (full dataset, P = 20), and `aturan_v15` (frozen decision rules applied to all results, including U-4). U-1 to U-3 are identical in both rule folders.
